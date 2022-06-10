@@ -7,12 +7,12 @@ import { faPencil } from "@fortawesome/free-solid-svg-icons";
 const Nav_Right = () => {
   return (
     //
-    <div className="navbar-right flex items-center">
+    <div className="navbar-right flex items-center h-full  ">
       <div className="search_bar px-2 py-1 relative ">
         <input
           type="text"
-          className="input-text bg-[#F6F6F6] rounded-sm py-1 px-2 outline-[#00C471]"
-          size="12"
+          className="input-text bg-[#F6F6F6] w-36 rounded-sm py-1 px-2 outline-[#00C471]"
+          // size="12"
         />
         <span className="search_icon absolute bottom-1.5 right-4 ">
           <FontAwesomeIcon
@@ -31,32 +31,36 @@ const Nav_Right = () => {
         </a>
       </div>
 
-      <div className="navbar-item px-3 py-2">
+      <div className="navbar-item px-3 py-2 text-lg">
         <span className="cart_hoverable ">
           <span className="nav_cart_btn">
-            <a href="#" className="icon_cover  ">
-              <FontAwesomeIcon icon={faCartShopping} />
-            </a>
-          </span>
-        </span>
-      </div>
-
-      <div className="navbar-item px-3 py-2">
-        <span className="message_hoverable ">
-          <span className="nav_message_btn">
             <a href="#" className="icon_cover ">
-              <FontAwesomeIcon icon={faBell} />
+              <span className="icon ">
+                <FontAwesomeIcon icon={faCartShopping} />
+              </span>
             </a>
           </span>
         </span>
       </div>
 
-      <div className="navbar-item w-6 h-12 ">
-        <span className="profile_hoverable ">
+      <div className="navbar-item px-3 py-2 text-lg  ">
+        <span className="message_hoverable ">
+          <span className="nav_message_btn ">
+            <a href="#" className="icon_cover ">
+              <span className="icon ">
+                <FontAwesomeIcon icon={faBell} />
+              </span>
+            </a>
+          </span>
+        </span>
+      </div>
+
+      <div className="navbar-item px-3 py-2  flex items-center ">
+        <span className="profile_hoverable  ">
           <span className="nav_profile_btn ">
             <a href="#" className="dashboard ">
               <img
-                src="img/default_profile.png"
+                src="img/default_profile-xs.png"
                 alt="profile_img"
                 className="rounded-full max-w-full max-h-full"
               />
